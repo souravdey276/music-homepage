@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Custom fonts -->
+      <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Skranji" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+       </head>
+  <body style="background-color: brown">
+  
+      <nav class="navbar navbar-expand-sm navbar-light">
+          <a class="navbar-brand" href="#"><img src="../assets/65t.gif" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+               <li class="nav-item active">
+                <a class="nav-link" href="#"><b>Home</b><span class="sr-only">(current)</span></a>
+              </li> 
+
+
+
+                                    
+
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="register"><b>Register</b></a>&nbsp;&nbsp;
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#" routerLink="login"><b>Login</b></a>&nbsp;&nbsp;
+              </li> -->
+
+             <!--  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <b>Songs</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Trending Songs</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">New Releases</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Top songs</a>
+                  
+                </div> -->
+  
+              
+
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <b>Login</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#" routerLink="login"><b>Login</b></a>&nbsp;&nbsp;
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" routerLink="editprofile"><b>Edit Profile</b></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item"(click)="logout()" routerLink="login"><b>Logout</b></a>&nbsp;&nbsp;
+    
+                  
+                  
+                </div>
+               
+
+             
+
+              
+
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><b>Artists</b></a>
+              </li>
+ -->
+
+              
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="addMusic"><b>Albums</b></a>&nbsp;&nbsp;
+              </li> 
+
+              
+              
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link" routerLink="addCustomer">ADD CUSTOMER</a>&nbsp;&nbsp; -->
+                
+                
+              
+              <li class="nav-item">
+                <a class="nav-link" routerLink="getMusic"><b>My Recommendations</b></a>&nbsp;&nbsp;
+              </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="takeMusic"><b>My Favourites</b></a>&nbsp;&nbsp;
+              </li> 
+
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" routerLink="editprofile"><b>Edit Profile</b></a>&nbsp;&nbsp;
+              </li>  -->
+
+
+              
+
+
+             
+            </ul>
+
+           
+
+           
+      
+          </div>
+        </nav>
+  
+        <router-outlet>  </router-outlet>

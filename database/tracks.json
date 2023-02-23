@@ -1,0 +1,196 @@
+{
+  "meta": [
+    {
+      "type": "track",
+      "id": "tra.364895047",
+      "index": 1,
+      "disc": 1,
+      "href": "https://api.napster.com/v2.2/tracks/tra.364895047",
+      "playbackSeconds": 13,
+      "isExplicit": false,
+      "isStreamable": true,
+      "isAvailableInHiRes": false,
+      "name": "!!!!!!!",
+      "isrc": "USUM71900763",
+      "shortcut": "billie-eilish/when-we-all-fall-asleep-where-do-we-go/t.364895047",
+      "blurbs": [],
+      "artistId": "art.214281475",
+      "artistName": "Billie Eilish",
+      "albumName": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+      "formats": [
+        {
+          "type": "format",
+          "bitrate": 320,
+          "name": "AAC",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        },
+        {
+          "type": "format",
+          "bitrate": 192,
+          "name": "AAC",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        },
+        {
+          "type": "format",
+          "bitrate": 128,
+          "name": "MP3",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        },
+        {
+          "type": "format",
+          "bitrate": 64,
+          "name": "AAC PLUS",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        }
+      ],
+      "losslessFormats": [
+        {
+          "type": "format",
+          "bitrate": 44100,
+          "name": "FLAC",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        }
+      ],
+      "albumId": "alb.364895046",
+      "contributors": {
+        "remixer": "art.33131193",
+        "engineer": "art.33131193",
+        "composer": "art.186781446",
+        "producer": "art.186781446",
+        "primaryArtist": "art.214281475"
+      },
+      "links": {
+        "artists": {
+          "ids": [
+            "art.214281475"
+          ],
+          "href": "https://api.napster.com/v2.2/artists/art.214281475"
+        },
+        "albums": {
+          "ids": [
+            "alb.364895046"
+          ],
+          "href": "https://api.napster.com/v2.2/albums/alb.364895046"
+        },
+        "composers": {
+          "ids": [
+            "art.186781446"
+          ],
+          "href": "https://api.napster.com/v2.2/artists/art.186781446"
+        },
+        "genres": {
+          "ids": [
+            "g.218",
+            "g.71",
+            "g.33"
+          ],
+          "href": "https://api.napster.com/v2.2/genres/g.218,g.71,g.33"
+        },
+        "tags": {
+          "ids": [
+            "tag.152196506",
+            "tag.152196543",
+            "tag.152196505"
+          ],
+          "href": "https://api.napster.com/v2.2/tags/tag.152196506,tag.152196543,tag.152196505"
+        }
+      },
+      "previewURL": "https://listen.hs.llnwd.net/g3/0/8/8/1/7/1496171880.mp3"
+    },
+    {
+      "type": "track",
+      "id": "tra.426965135",
+      "index": 2,
+      "disc": 1,
+      "href": "https://api.napster.com/v2.2/tracks/tra.426965135",
+      "playbackSeconds": 196,
+      "isExplicit": true,
+      "isStreamable": true,
+      "isAvailableInHiRes": false,
+      "name": "The Box",
+      "isrc": "USAT21906978",
+      "shortcut": "roddy-ricch/please-excuse-me-for-being-antisocial/the-box",
+      "blurbs": [],
+      "artistId": "art.286749238",
+      "artistName": "Roddy Ricch",
+      "albumName": "Please Excuse Me For Being Antisocial",
+      "formats": [
+        {
+          "type": "format",
+          "bitrate": 192,
+          "name": "AAC",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        },
+        {
+          "type": "format",
+          "bitrate": 320,
+          "name": "AAC",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        },
+        {
+          "type": "format",
+          "bitrate": 128,
+          "name": "MP3",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        },
+        {
+          "type": "format",
+          "bitrate": 64,
+          "name": "AAC PLUS",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        }
+      ],
+      "losslessFormats": [
+        {
+          "type": "format",
+          "bitrate": 44100,
+          "name": "FLAC",
+          "sampleBits": 16,
+          "sampleRate": 44100
+        }
+      ],
+      "albumId": "alb.426965133",
+      "contributors": {
+        "primaryArtist": "art.286749238"
+      },
+      "links": {
+        "artists": {
+          "ids": [
+            "art.286749238"
+          ],
+          "href": "https://api.napster.com/v2.2/artists/art.286749238"
+        },
+        "albums": {
+          "ids": [
+            "alb.426965133"
+          ],
+          "href": "https://api.napster.com/v2.2/albums/alb.426965133"
+        },
+        "genres": {
+          "ids": [
+            "g.146",
+            "g.383"
+          ],
+          "href": "https://api.napster.com/v2.2/genres/g.146,g.383"
+        },
+        "tags": {
+          "ids": [
+            "tag.152196515",
+            "tag.152196578"
+          ],
+          "href": "https://api.napster.com/v2.2/tags/tag.152196515,tag.152196578"
+        }
+      },
+      "previewURL": "https://listen.hs.llnwd.net/g3/7/3/0/6/2/1724126037.mp3"
+    }
+  ]
+}

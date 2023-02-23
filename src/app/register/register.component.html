@@ -1,0 +1,124 @@
+
+<div class="card text-center" style="background-color:sandybrown">
+   <!-----Card header------>
+   <div class="card-header" style="background-color: yellowgreen">
+     Register
+   </div>
+   <!------card Body------->
+   <div class="card-body">
+       <form  #contactForm="ngForm" class="form-horizontal" (ngSubmit)="addUser()" #userForm="ngForm" novalidate>
+     <div class="container">
+         <!-----FirstName-------->
+         <div class="form-group">
+     <div class=row>
+           <!-- label and input box with type text-->
+      <label class="control-label col-sm-2" for="firstname">First name</label>
+              <div class="col-sm-10">
+               <input type="text" class="form-control" id="firstname" required placeholder="Enter your first name" [(ngModel)]="user.firstname" name ="firstname" #firstname="ngModel" minlength="3">
+                 <!-----Errors------->    
+                   <!--showing error message when the firstname is empty-->
+                   <div *ngIf="firstname.touched && firstname.errors">
+                         <div class="alert alert-danger" *ngIf="name.errors.required">
+                               First Name is required
+                            </div>
+                      <!--  <div class="alert alert-danger" *ngIf="name.errors.minlength">
+                                First name should be of minimum characters 3
+                       </div> -->
+                         </div>
+              </div>
+                 </div>
+               </div>
+        <!-----LastName-------->
+        <div class="form-group">
+       <div class=row>
+           <label class="control-label col-sm-2" for="name">Last name</label>
+                 <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" required placeholder="Enter your last name" [(ngModel)]="user.lastname" name ="name" #name="ngModel" minlength="3">
+                      <!-----Errors------->    
+                  <div *ngIf="name.touched && name.errors">
+                        <div class="alert alert-danger" *ngIf="name.errors.required">
+                           Last Name is required
+                         </div>
+                            <!-- <div class="alert alert-danger" *ngIf="name.errors.minlength">
+                             Last name should be of minimum characters 3
+                             </div> -->
+                       </div>
+              </div>
+              </div>
+        </div>
+  
+  
+  
+  
+        <!-------Email------->
+     <div class="form-group">
+       <div class=row>
+             <label class="control-label col-sm-2" for="email">Email:</label>
+             <div class="col-sm-10">
+               <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" [(ngModel)]="user.email"  minlength="3" #email="ngModel" required email>
+                 <!------Errors-------->
+                     <div *ngIf="email.touched && email.errors">
+                      <div class="alert alert-danger" *ngIf="email.errors.required">
+                      Email is required !!!
+                     </div>
+                   <div class="alert alert-danger" *ngIf="email.errors.minlength">
+                          Email should be of minimum 3 characters!!!
+                          </div>
+                    </div>
+                     <div  *ngIf="!email.valid">
+                       <div class="alert alert-danger" *ngIf="email.errors.email">
+                        Email is invalid
+                        </div>
+                </div>
+          </div>
+        </div>    
+    </div>
+        
+    
+    <div class="form-group">
+         <div class=row>
+                <label class="control-label col-sm-2" for="password">Password</label>
+              <div class="col-sm-10">
+                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" [(ngModel)]="user.password"  minlength="3" #password="ngModel" required >
+                 <div *ngIf="password.touched && password.errors">
+                  <div class="alert alert-danger" *ngIf="password.errors.required">
+                   Password is required!!!
+                        </div>
+                         </div>
+                
+                </div>
+                  </div>
+                 </div>
+                           
+              
+              
+              
+                 <!-----Gender------->
+               <div class="form-group">
+             <div class=row>
+               <label class="control-label col-sm-2" for="region">Gender:</label>
+                     <div class="col-sm-10">
+               <select  class="form-control" id="gender" name="gender" [(ngModel)]="user.gender">
+                          <option *ngFor="let c of gender" [value]="c">{{c}}</option>
+                     </select>
+               </div>
+             </div>
+          </div>
+              
+          
+          
+  <!-----submit------>
+     <div class="form-group">
+              <div class="col-sm-12 text-center">
+  <button type="submit" [disabled]="!contactForm.form.valid"  class="btn btn-primary">Register</button>
+         </div>
+        </div>
+      </div>
+ </form>
+    
+   </div>
+   
+  
+ </div>
+ 
+ 

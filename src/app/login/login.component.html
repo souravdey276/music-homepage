@@ -1,0 +1,64 @@
+<div class="card text-center" style="background-color: black">
+    <!-----Card header------>
+    <div class="card-header" style ="background-color:gold">
+      Login 
+    </div>
+    <!------card Body------->
+    <div class="card-body">
+ <form  #contactForm="ngForm" id="loginForm" class="form-horizontal" #userForm="ngForm" novalidate>
+ <div class="container">
+                <!-----Email-------->
+ <div class="form-group">
+     <div class=row>
+          <label class="control-label col-sm-2" for="email" style="color:white">Email Id</label>
+             <div class="col-sm-10">
+               <input type="text" class="form-control" id="email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter the email" [(ngModel)]="user.email" name ="email" #email="ngModel">
+             <!-----Errors------->    
+                <div *ngIf="email.touched && email.errors">
+              <div *ngIf="email.errors.required" class="alert alert-danger">
+                     Email is required
+                  </div>  
+                 <div *ngIf="email.errors.pattern" class="alert alert-danger">
+                    email is not valid!!
+                 </div>
+                  </div>
+             </div>
+                    </div>
+                </div> 
+               
+               
+               
+               
+                <!-----Password-------->
+                <div class="form-group">
+            <div class=row>
+                  <label class="control-label col-sm-2" for="password" style="color:white">Password</label>
+            <div class="col-sm-10">
+            <input type="password" class="form-control" id="password" required placeholder="Enter password" [(ngModel)]="user.password" name ="password" #password="ngModel">
+           <!-----Errors------->    
+            <div *ngIf="password.touched && password.errors">
+              <div class="alert alert-danger" *ngIf="password.errors.required">
+               Password is required!!!
+                    </div>
+                     </div>
+                 </div>
+       
+                </div>
+  
+                    
+                </div>
+                 <!-----submit------>
+                 <div class="form-group">
+                    <div class="col-sm-12 text-center">
+                 <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid" (click)="onLogin()">Login</button>&nbsp;&nbsp;
+                
+                       
+                  
+            
+    </div>
+     </div>
+ </div>
+ </form>
+ </div>
+  
+  

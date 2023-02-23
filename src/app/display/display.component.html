@@ -1,0 +1,82 @@
+
+
+    <mat-toolbar color="default">
+      <span>My Recommendations</span>
+    </mat-toolbar>
+
+
+
+    <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let music of musicList">
+          <mat-card class="mat-elevation-z4" >
+            <mat-card-header>
+                <mat-card-title>{{music.artistName}}</mat-card-title>
+                <mat-card-subtitle>{{music.albumName}}</mat-card-subtitle>
+      
+            </mat-card-header>
+
+            <mat-card-actions>
+              <button mat-button class="btn btn-success" (click)="deleteMusic(music)">Unrecommend</button>
+              
+            </mat-card-actions>
+            
+        </mat-card>
+    </div>
+
+
+    <footer class="page-footer">
+  
+      <div class="row text-center">
+        <div class="col-19 col-sm-20 col-md-4 col-lg-4">
+           <!--  <h3>Privacy Policy</h3>
+            <h4 style="text-align:left"></h4> -->
+  
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+   -->
+  
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="#">Login</a>
+            </li> -->
+  
+           
+  
+              
+  
+           <address style="text-align:centre;margin-left: 2em">
+  
+            <a href="">Terms of Use</a><br>
+            <a href="">Privacy Policy</a><br>
+            <a href="">Feedback</a>
+             
+               
+              </address> 
+    
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <h3>Connect with us socially</h3>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <a class="navbar-brand" href="#"><img src="../assets/img7.jpg" alt="" srcset="" class="img-fluid"></a>
+        </div>
+    </div>
+    
+    </footer>
+    
+    
+    
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+  
+
+

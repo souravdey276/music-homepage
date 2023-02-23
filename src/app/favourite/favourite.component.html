@@ -1,0 +1,25 @@
+
+
+
+    <mat-toolbar color="default">
+        <span>My Favourites</span>
+      </mat-toolbar>
+  
+  
+  
+      <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let music of musicList">
+            <mat-card class="mat-elevation-z4" >
+              <mat-card-header>
+                  <mat-card-title>{{music.artistName}}</mat-card-title>
+                  <mat-card-subtitle>{{music.albumName}}</mat-card-subtitle>
+        
+              </mat-card-header>
+  
+              <mat-card-actions>
+                <button mat-button class="btn btn-success" (click)="deleteFavourite(music)">Remove</button>
+                
+              </mat-card-actions>
+              
+          </mat-card>
+      </div>

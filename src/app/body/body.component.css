@@ -1,0 +1,162 @@
+
+.navbar-brand img{
+    height:10vh;
+    width:5vw;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.size{
+    width: 20vw;
+    height: 20vh;
+}
+
+footer{
+  background-color: yellowgreen;
+  color:#fff;
+  width: 100%;
+  margin-bottom: 0px;
+  
+  
+}  
+.fa{
+  font-size: 2em !important;
+  color:#fff;
+  padding:0.2em;
+}
+
+.jumbotron
+{
+background-color : teal;
+}
+
+
+a:link {
+color: red;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color:blue;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    padding-top: 0.8px;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 200px) and (max-width: 200px) {
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 200x) and (max-width: 200px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 200px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+
+
+.modal-backdrop.show {
+    background-color:honeydew;
+    opacity: 0.75;
+ }
+
+ 
+ .heading
+ {
+    text-align: center;
+    padding-left: 32%;
+ }
+
+
+
+ .heading2
+ {
+    text-align: center;
+    padding-left: 0%;
+ }
+
+
+.input {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  
+
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.9;
+}
+
+
+
+
+
+
